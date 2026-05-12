@@ -327,11 +327,11 @@
         "wrapper-modules": "wrapper-modules"
       },
       "locked": {
-        "lastModified": 1778590981,
-        "narHash": "sha256-XGTUJUIPA3BjBFr0fdp+NKnEw+3AXCx32wYW18E+Mkg=",
+        "lastModified": 1778591598,
+        "narHash": "sha256-CG3pGkfkPfnP1CL4NaDDZrvx/b4rglBAENyckrzn1LQ=",
         "owner": "alex-kumpula",
         "repo": "xalaynix-wrappers",
-        "rev": "68341e153d7b47e109026c6a5ac548b88acabab9",
+        "rev": "7c6f0e0643df5906ce278a316b1cf56c2e68cd0a",
         "type": "github"
       },
       "original": {
