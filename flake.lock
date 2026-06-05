@@ -160,11 +160,11 @@
         "wrapper-modules": "wrapper-modules"
       },
       "locked": {
-        "lastModified": 1780620185,
-        "narHash": "sha256-jMAU+c4Hy/WVB29DbrsqBtIIQ4NxXdERU8kfGevoNS8=",
+        "lastModified": 1780620933,
+        "narHash": "sha256-tgR3VcXJeOXKyy29FiZXH3oC7KhMw2HbmzOJUPsIXgU=",
         "owner": "xalayn",
         "repo": "nix-jacket",
-        "rev": "e3c85da95586e2538bd80aa1a431c70b7b4d1009",
+        "rev": "627aa88609a6c27f5c6624793d6d6c1567f7352a",
         "type": "github"
       },
       "original": {
