@@ -227,6 +227,11 @@
     8888
   ];
 
+  networking.firewall.allowedTCPPortRanges = [
+    # KDE Connect
+    { from = 1714; to = 1764; }
+  ];
+
   networking.firewall.allowedUDPPorts = [
     # Slipstresm
     7760
@@ -234,9 +239,6 @@
     7771
     7779
     7781
-
-    # KDE Connect
-    { from = 1714; to = 1764; }
 
     # Minecraft
     25565 
@@ -246,6 +248,11 @@
 
     # Jupyter Notebook
     8888
+  ];
+
+  networking.firewall.allowedUDPPortRanges = [
+    # KDE Connect
+    { from = 1714; to = 1764; }
   ];
 
   # Set your time zone.
