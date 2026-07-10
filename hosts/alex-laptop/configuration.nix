@@ -212,6 +212,10 @@
     7771
     7779
     7781
+    
+    # KDE Connect
+    { from = 1714; to = 1764; }
+
 
     # Minecraft
     25565 
@@ -230,6 +234,9 @@
     7771
     7779
     7781
+
+    # KDE Connect
+    { from = 1714; to = 1764; }
 
     # Minecraft
     25565 
