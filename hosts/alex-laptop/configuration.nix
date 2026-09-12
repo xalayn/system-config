@@ -129,7 +129,7 @@
   };
 
   # Optimized linux kernel
-  boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.kernelPackages = pkgs.linuxPackages;
 
   # Enable NTFS support
   boot.supportedFilesystems = [ "ntfs" ];
@@ -148,7 +148,7 @@
   };
 
   # Load nvidia driver for Xorg and Wayland
-  services.xserver.videoDrivers = ["nvidia" "modesetting"];
+  services.xserver.videoDrivers = [ "modesetting" "nvidia" ];
 
   hardware.nvidia = {
 
@@ -171,7 +171,7 @@
     # supported GPUs is at: 
     # https://github.com/NVIDIA/open-gpu-kernel-modules#compatible-gpus 
     # Only available from driver 515.43.04+
-    open = false;
+    open = true;
 
     # Enable the Nvidia settings menu,
 	  # accessible via `nvidia-settings`.
@@ -181,9 +181,13 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
 
     prime = {
-      sync.enable = true;
-      intelBusId = "PCI:0:2:0";
-      nvidiaBusId = "PCI:1:0:0";
+      sync.enable = false;
+      offload = {
+        enable = true;
+        enableOffloadCmd = true;
+      };
+      intelBusId = "PCI:0@0:2:0";
+      nvidiaBusId = "PCI:1@0:0:0";
       #amdgpuBusId = "PCI:54:0:0"; # If you have an AMD iGPU
     };
   };
