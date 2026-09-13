@@ -1,6 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 {
-  environment.systemPackages = with pkgs; [
-    blueberry
-  ];
+  services.blueman.enable = true;
 }

@@ -44,6 +44,10 @@
     ./hardware-configuration.nix
   ];
 
+  # Keep using programs.ssh.startAgent; NixOS 26.05 enables GNOME's
+  # competing GCR SSH agent by default when the GNOME desktop is enabled.
+  services.gnome.gcr-ssh-agent.enable = false;
+
   nixpkgs = {
     # You can add overlays here
     overlays = [
@@ -192,13 +196,6 @@
     };
   };
 
-  # VULKAN
-  #hardware.opengl.driSupport32Bit = true; # Needed for Steam to work, among other things
-  hardware.opengl.enable = true;
-  hardware.opengl.extraPackages = with pkgs; [
-    vulkan-loader
-  ];
-
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -292,7 +289,7 @@
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
-  services.xserver.libinput.enable = true;
+  services.libinput.enable = true;
 
   # Enable appimage support
   programs.appimage.enable = true;
