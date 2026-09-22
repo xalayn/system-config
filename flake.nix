@@ -6,7 +6,7 @@
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     xalaynix-wrappers.url = "github:alex-kumpula/xalaynix-wrappers";
-    nix-jacket.url = "github:xalayn/nix-jacket";
+    nix-jacket.url = "git+https://github.com/xalayn/nix-jacket.git?ref=main";
     nix-parcels.url = "git+https://github.com/xalayn/nix-parcels.git?ref=enter-escape";
   };
 
