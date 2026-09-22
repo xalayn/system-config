@@ -14,7 +14,9 @@ let
   ).package;
 in
 {
-  programs.niri.enable = true;
+  programs.niri = {
+    enable = true;
+  };
 
   # For wrapper niri
   services.displayManager.sessionPackages = [

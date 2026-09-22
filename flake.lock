@@ -197,12 +197,54 @@
         "type": "github"
       }
     },
+    "niri": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1781781064,
+        "narHash": "sha256-Ii/koEm/sRyg65qbAQWqEgboSEIhdH0EL4KglAc14p0=",
+        "owner": "YaLTeR",
+        "repo": "niri",
+        "rev": "49fc6117fd6c043adaa2ead316b82db5ed735d36",
+        "type": "github"
+      },
+      "original": {
+        "owner": "YaLTeR",
+        "repo": "niri",
+        "rev": "49fc6117fd6c043adaa2ead316b82db5ed735d36",
+        "type": "github"
+      }
+    },
+    "niri-glass": {
+      "inputs": {
+        "niri": "niri",
+        "nixpkgs": [
+          "niri-glass",
+          "niri",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1789607481,
+        "narHash": "sha256-SxODp3e8IY11enWvxwzKn9N6neO6jIxdOT5RIL0WIdw=",
+        "owner": "zaroutt",
+        "repo": "Niri-glass",
+        "rev": "72ee16331994b43a9460b713b828a218a023a857",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zaroutt",
+        "repo": "Niri-glass",
+        "type": "github"
+      }
+    },
     "nix-jacket": {
       "inputs": {
         "flake-file": "flake-file",
         "flake-parts": "flake-parts",
         "import-tree": "import-tree",
-        "nixpkgs": "nixpkgs",
+        "nixpkgs": "nixpkgs_2",
         "nixpkgs-lib": [
           "nix-jacket",
           "nixpkgs"
@@ -230,7 +272,7 @@
         "flake-file": "flake-file_2",
         "flake-parts": "flake-parts_2",
         "import-tree": "import-tree_2",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs_3",
         "nixpkgs-lib": [
           "nix-parcels",
           "nixpkgs"
@@ -239,11 +281,11 @@
         "noctalia": "noctalia"
       },
       "locked": {
-        "lastModified": 1790047134,
-        "narHash": "sha256-ztWbYvrkbqJHNcgRd90qrGbURGEuZGXR58Ww+hfMiG4=",
+        "lastModified": 1790118682,
+        "narHash": "sha256-iZkJelStCWrP7wFlHOa7S1nesTZpRQB30QSbV5gbbRs=",
         "ref": "enter-escape",
-        "rev": "5224da477e9bd45bcf554118d740cb5e66ced7d3",
-        "revCount": 40,
+        "rev": "f919f01333008f8fad4fa41c2eb71cbfb26f569a",
+        "revCount": 41,
         "type": "git",
         "url": "https://github.com/xalayn/nix-parcels.git"
       },
@@ -255,16 +297,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1779102034,
-        "narHash": "sha256-vZJZjLo513IeI8hjzHFc6TDezUd4uCE2Eq4SNO3DNNg=",
+        "lastModified": 1781607440,
+        "narHash": "sha256-rxO+uc/KFbSJp+pgyXRuAX6QlG9hJdnt0BXpEQRXY+U=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "687f05a9184cad4eaf905c48b63649e3a86f5433",
+        "rev": "3e41b24abd260e8f71dbe2f5737d24122f972158",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-25.11",
+        "ref": "nixpkgs-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -335,6 +377,22 @@
     },
     "nixpkgs_2": {
       "locked": {
+        "lastModified": 1779102034,
+        "narHash": "sha256-vZJZjLo513IeI8hjzHFc6TDezUd4uCE2Eq4SNO3DNNg=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "687f05a9184cad4eaf905c48b63649e3a86f5433",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-25.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
         "lastModified": 1780511130,
         "narHash": "sha256-2v9lT4ya59Lh1FqPeLnz1MoX9y/wz2huqfe9RtQZITk=",
         "owner": "NixOS",
@@ -349,7 +407,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_3": {
+    "nixpkgs_4": {
       "locked": {
         "lastModified": 1789998861,
         "narHash": "sha256-62XMQD4WLdMAfdT0/8gJmPH2dKeTw908ryNloAplTr8=",
@@ -365,7 +423,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_4": {
+    "nixpkgs_5": {
       "locked": {
         "lastModified": 1778430510,
         "narHash": "sha256-Ti+ZBvW6yrWWAg2szExVTwCd4qOJ3KlVr1tFHfyfi8Q=",
@@ -474,9 +532,10 @@
     },
     "root": {
       "inputs": {
+        "niri-glass": "niri-glass",
         "nix-jacket": "nix-jacket",
         "nix-parcels": "nix-parcels",
-        "nixpkgs": "nixpkgs_3",
+        "nixpkgs": "nixpkgs_4",
         "nixpkgs-unstable": "nixpkgs-unstable_3",
         "xalaynix-wrappers": "xalaynix-wrappers"
       }
@@ -583,7 +642,7 @@
         "flake-file": "flake-file_3",
         "flake-parts": "flake-parts_3",
         "import-tree": "import-tree_3",
-        "nixpkgs": "nixpkgs_4",
+        "nixpkgs": "nixpkgs_5",
         "nixpkgs-lib": [
           "xalaynix-wrappers",
           "nixpkgs"
