@@ -61,6 +61,21 @@
     },
     "flake-file_2": {
       "locked": {
+        "lastModified": 1779051720,
+        "narHash": "sha256-+jbXnODsR19pFKB0x/6kHhFgW6yV6N+CGClFr45eDU8=",
+        "owner": "vic",
+        "repo": "flake-file",
+        "rev": "c58eb27d9434e5be0c8693f1eb18d47035bc21ba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vic",
+        "repo": "flake-file",
+        "type": "github"
+      }
+    },
+    "flake-file_3": {
+      "locked": {
         "lastModified": 1777679829,
         "narHash": "sha256-zQxY90pq7BDbeimAiOfuK2U0huzo6oHOiC8zEpRgsbQ=",
         "owner": "vic",
@@ -98,6 +113,27 @@
     "flake-parts_2": {
       "inputs": {
         "nixpkgs-lib": [
+          "nix-parcels",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1778716662,
+        "narHash": "sha256-m1Yf0wZ8j1OHjTc2UwHwyQRSnNeSgLJOd7q5Y45hzi4=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "f7c1a2d347e4c52d5fb8d10cb4d94b5884e546fb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "flake-parts_3": {
+      "inputs": {
+        "nixpkgs-lib": [
           "xalaynix-wrappers",
           "nixpkgs-lib"
         ]
@@ -132,6 +168,21 @@
       }
     },
     "import-tree_2": {
+      "locked": {
+        "lastModified": 1778781969,
+        "narHash": "sha256-Jjuz5CmSkur8KvLDoGa+vylEp+RkQtv4mt/qcMznpH0=",
+        "owner": "vic",
+        "repo": "import-tree",
+        "rev": "d321337efd0f23a9eb14a42adb7b2c29313ab274",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vic",
+        "repo": "import-tree",
+        "type": "github"
+      }
+    },
+    "import-tree_3": {
       "locked": {
         "lastModified": 1773693634,
         "narHash": "sha256-BtZ2dtkBdSUnFPPFc+n0kcMbgaTxzFNPv2iaO326Ffg=",
@@ -173,6 +224,34 @@
         "type": "github"
       }
     },
+    "nix-parcels": {
+      "inputs": {
+        "flake-file": "flake-file_2",
+        "flake-parts": "flake-parts_2",
+        "import-tree": "import-tree_2",
+        "nixpkgs": "nixpkgs_2",
+        "nixpkgs-lib": [
+          "nix-parcels",
+          "nixpkgs"
+        ],
+        "nixpkgs-unstable": "nixpkgs-unstable_2",
+        "noctalia": "noctalia"
+      },
+      "locked": {
+        "lastModified": 1790040325,
+        "narHash": "sha256-f0SpfNdf9AYjEZKbiW6uCyCBjV7gWqf4FJWxPoS9O6Q=",
+        "ref": "enter-escape",
+        "rev": "c3717a537e341726b0b3d7bb55449d36fb53d663",
+        "revCount": 39,
+        "type": "git",
+        "url": "https://github.com/xalayn/nix-parcels.git"
+      },
+      "original": {
+        "ref": "enter-escape",
+        "type": "git",
+        "url": "https://github.com/xalayn/nix-parcels.git"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1779102034,
@@ -207,6 +286,22 @@
     },
     "nixpkgs-unstable_2": {
       "locked": {
+        "lastModified": 1780749050,
+        "narHash": "sha256-3av0pIjlOWQ6rDbNOmpUSvbNnJkGORQKKjb4LtCZsIY=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "a799d3e3886da994fa307f817a6bc705ae538eeb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-unstable_3": {
+      "locked": {
         "lastModified": 1789149629,
         "narHash": "sha256-H6GwaZzZf+4npqv0tph94w9tZddSjFjmQrVsW0z78uk=",
         "owner": "nixos",
@@ -221,7 +316,7 @@
         "type": "github"
       }
     },
-    "nixpkgs-unstable_3": {
+    "nixpkgs-unstable_4": {
       "locked": {
         "lastModified": 1777954456,
         "narHash": "sha256-hGdgeU2Nk87RAuZyYjyDjFL6LK7dAZN5RE9+hrDTkDU=",
@@ -239,6 +334,22 @@
     },
     "nixpkgs_2": {
       "locked": {
+        "lastModified": 1780511130,
+        "narHash": "sha256-2v9lT4ya59Lh1FqPeLnz1MoX9y/wz2huqfe9RtQZITk=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "535f3e6942cb1cead3929c604320d3db54b542b9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-25.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
         "lastModified": 1789114715,
         "narHash": "sha256-ugpsyk3NM2s87vXfUiIIiibbJ4Pp0JPS5p/3mfs+q+c=",
         "owner": "nixos",
@@ -253,7 +364,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_3": {
+    "nixpkgs_4": {
       "locked": {
         "lastModified": 1778430510,
         "narHash": "sha256-Ti+ZBvW6yrWWAg2szExVTwCd4qOJ3KlVr1tFHfyfi8Q=",
@@ -272,22 +383,22 @@
     "noctalia": {
       "inputs": {
         "nixpkgs": [
-          "xalaynix-wrappers",
+          "nix-parcels",
           "nixpkgs-unstable"
-        ],
-        "noctalia-qs": "noctalia-qs"
+        ]
       },
       "locked": {
-        "lastModified": 1778464608,
-        "narHash": "sha256-tZRvyaKVP0DJ9DSFrr6K/l3X74Orfirk3Jjo7+br4Qs=",
+        "lastModified": 1783601264,
+        "narHash": "sha256-yqkHIypClzlztMmt4HVytCdU8Kqy3EqHJotHtbyFulI=",
         "owner": "noctalia-dev",
-        "repo": "noctalia-shell",
-        "rev": "761869a561548874fe7e293b157fd7841576b367",
+        "repo": "noctalia",
+        "rev": "32bcfb9c9783874c5c0f9709e3f741b07e54ca65",
         "type": "github"
       },
       "original": {
         "owner": "noctalia-dev",
-        "repo": "noctalia-shell",
+        "ref": "v5.0.0-beta2",
+        "repo": "noctalia",
         "type": "github"
       }
     },
@@ -312,6 +423,28 @@
       "original": {
         "owner": "noctalia-dev",
         "repo": "noctalia-qs",
+        "type": "github"
+      }
+    },
+    "noctalia_2": {
+      "inputs": {
+        "nixpkgs": [
+          "xalaynix-wrappers",
+          "nixpkgs-unstable"
+        ],
+        "noctalia-qs": "noctalia-qs"
+      },
+      "locked": {
+        "lastModified": 1778464608,
+        "narHash": "sha256-tZRvyaKVP0DJ9DSFrr6K/l3X74Orfirk3Jjo7+br4Qs=",
+        "owner": "noctalia-dev",
+        "repo": "noctalia-shell",
+        "rev": "761869a561548874fe7e293b157fd7841576b367",
+        "type": "github"
+      },
+      "original": {
+        "owner": "noctalia-dev",
+        "repo": "noctalia-shell",
         "type": "github"
       }
     },
@@ -341,8 +474,9 @@
     "root": {
       "inputs": {
         "nix-jacket": "nix-jacket",
-        "nixpkgs": "nixpkgs_2",
-        "nixpkgs-unstable": "nixpkgs-unstable_2",
+        "nix-parcels": "nix-parcels",
+        "nixpkgs": "nixpkgs_3",
+        "nixpkgs-unstable": "nixpkgs-unstable_3",
         "xalaynix-wrappers": "xalaynix-wrappers"
       }
     },
@@ -445,16 +579,16 @@
       "inputs": {
         "dgop": "dgop",
         "dms": "dms",
-        "flake-file": "flake-file_2",
-        "flake-parts": "flake-parts_2",
-        "import-tree": "import-tree_2",
-        "nixpkgs": "nixpkgs_3",
+        "flake-file": "flake-file_3",
+        "flake-parts": "flake-parts_3",
+        "import-tree": "import-tree_3",
+        "nixpkgs": "nixpkgs_4",
         "nixpkgs-lib": [
           "xalaynix-wrappers",
           "nixpkgs"
         ],
-        "nixpkgs-unstable": "nixpkgs-unstable_3",
-        "noctalia": "noctalia",
+        "nixpkgs-unstable": "nixpkgs-unstable_4",
+        "noctalia": "noctalia_2",
         "systems": "systems_2",
         "wrapper-modules": "wrapper-modules_2"
       },
