@@ -239,11 +239,11 @@
         "noctalia": "noctalia"
       },
       "locked": {
-        "lastModified": 1790123764,
-        "narHash": "sha256-c5ipLYCo0HT+oJI+8iumV2WHGu6xltf+h7rmbEC0uEQ=",
+        "lastModified": 1790128627,
+        "narHash": "sha256-An6ieGAFB5E/EuFft2pOtUzJY85437xSH4e0V0EaPSE=",
         "ref": "enter-escape",
-        "rev": "b5c15c222fca3ae8b8d5730e77ac3f9485f3b6a3",
-        "revCount": 44,
+        "rev": "2572adfdb41006139b07bb0fd367e2bc9c636cc0",
+        "revCount": 45,
         "type": "git",
         "url": "https://github.com/xalayn/nix-parcels.git"
       },
