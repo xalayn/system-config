@@ -290,6 +290,14 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+    # Keep enough processing time for Discord through EasyEffects (21.3 ms at 48 kHz).
+    # A default alone can be lowered by clients, so also set the minimum.
+    extraConfig.pipewire."92-audio-buffer" = {
+      "context.properties" = {
+        "default.clock.quantum" = 1024;
+        "default.clock.min-quantum" = 1024;
+      };
+    };
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
 

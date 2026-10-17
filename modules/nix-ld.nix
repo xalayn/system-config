@@ -1,8 +1,15 @@
 { config, pkgs, ... }:
+let
+  libcSoLink = pkgs.runCommand "libc-so-link" { } ''
+    mkdir -p $out/lib
+    ln -s ${pkgs.glibc}/lib/libc.so.6 $out/lib/libc.so
+  '';
+in
 {
   programs.nix-ld = {
     enable = true;
     libraries = with pkgs; [
+      libcSoLink
       alsa-lib
       at-spi2-atk
       at-spi2-core
@@ -17,6 +24,7 @@
       fuse3
       gdk-pixbuf
       glib
+      glibc
       gtk3
       icu
       libGL
