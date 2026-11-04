@@ -8,12 +8,15 @@
     xalaynix-wrappers.url = "github:alex-kumpula/xalaynix-wrappers";
     nix-jacket.url = "git+https://github.com/xalayn/nix-jacket.git?ref=main";
     nix-parcels.url = "git+https://github.com/xalayn/nix-parcels.git?ref=enter-escape";
+
+    driftwm.url = "github:malbiruk/driftwm";
   };
 
   outputs = {
     self,
     nixpkgs,
     nixpkgs-unstable,
+    driftwm,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -88,6 +91,7 @@
         modules = [
           # > Our main nixos configuration file <
           ./hosts/alex-laptop/configuration.nix
+          driftwm.nixosModules.default
         ];
       };
     };
