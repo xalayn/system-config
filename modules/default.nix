@@ -25,4 +25,5 @@
   winboat = import ./winboat.nix;
   xfce = import ./xfce.nix;
   driftwm = import ./driftwm.nix;
+  hyprland = import ./hyprland.nix;
 }

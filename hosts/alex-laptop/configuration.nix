@@ -17,6 +17,7 @@
     outputs.nixosModules.gnome
     outputs.nixosModules.niri
     outputs.nixosModules.driftwm
+    outputs.nixosModules.hyprland
     outputs.nixosModules.xwayland-satellite
     outputs.nixosModules.alacritty
     outputs.nixosModules.git
