@@ -5,6 +5,11 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
+    # Hyprland is pinned to 0.56.2 for the Phantomat plugin, which does not
+    # build against 0.57 yet. Hyprland (here) and the plugin (home-config) must
+    # come from the same revision; keep this in sync with home-config/flake.nix.
+    nixpkgs-hyprland.url = "github:nixos/nixpkgs/e7fe03cce61eebcf570cd294f70cefe3ad76feed";
+
     xalaynix-wrappers.url = "github:alex-kumpula/xalaynix-wrappers";
     nix-jacket.url = "git+https://github.com/xalayn/nix-jacket.git?ref=main";
     nix-parcels.url = "git+https://github.com/xalayn/nix-parcels.git?ref=enter-escape";
@@ -56,6 +61,10 @@
         inherit inputs;
         system = "x86_64-linux";
         config.allowUnfree = true;
+      };
+
+      pkgs-hyprland = import inputs.nixpkgs-hyprland {
+        system = "x86_64-linux";
       };
 
       #pkgs-pinned = import nixpkgs-pinned {

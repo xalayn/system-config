@@ -287,6 +287,22 @@
         "type": "github"
       }
     },
+    "nixpkgs-hyprland": {
+      "locked": {
+        "lastModified": 1792886117,
+        "narHash": "sha256-OfxJaGpi1HlknyiIDTyFw7OX4LbRg/eT0TTJPYkDLHM=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "e7fe03cce61eebcf570cd294f70cefe3ad76feed",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "e7fe03cce61eebcf570cd294f70cefe3ad76feed",
+        "type": "github"
+      }
+    },
     "nixpkgs-unstable": {
       "locked": {
         "lastModified": 1779357205,
@@ -512,6 +528,7 @@
         "nix-jacket": "nix-jacket",
         "nix-parcels": "nix-parcels",
         "nixpkgs": "nixpkgs_4",
+        "nixpkgs-hyprland": "nixpkgs-hyprland",
         "nixpkgs-unstable": "nixpkgs-unstable_3",
         "xalaynix-wrappers": "xalaynix-wrappers"
       }
