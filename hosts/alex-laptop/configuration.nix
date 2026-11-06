@@ -23,6 +23,7 @@
     outputs.nixosModules.git
     outputs.nixosModules.nix-ld
     outputs.nixosModules.steam
+    outputs.nixosModules.ananicy
     outputs.nixosModules.blueberry
     outputs.nixosModules.wl-mirror
     outputs.nixosModules.evremap
