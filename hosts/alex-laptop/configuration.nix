@@ -209,6 +209,14 @@
     __VK_LAYER_NV_optimus = "NVIDIA_only";
   };
 
+  # Stable names for the two GPUs (/dev/dri/cardN numbers can swap between
+  # boots). Hyprland uses them to render on the RTX while the laptop panel stays
+  # on the Intel GPU (AQ_DRM_DEVICES in hyprland.lua).
+  services.udev.extraRules = ''
+    KERNEL=="card*", KERNELS=="0000:01:00.0", SUBSYSTEM=="drm", SUBSYSTEMS=="pci", SYMLINK+="dri/nvidia-dgpu"
+    KERNEL=="card*", KERNELS=="0000:00:02.0", SUBSYSTEM=="drm", SUBSYSTEMS=="pci", SYMLINK+="dri/intel-igpu"
+  '';
+
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
