@@ -5,10 +5,11 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    # Hyprland is pinned to 0.56.2 for the Phantomat plugin, which does not
-    # build against 0.57 yet. Hyprland (here) and the plugin (home-config) must
-    # come from the same revision; keep this in sync with home-config/flake.nix.
-    nixpkgs-hyprland.url = "github:nixos/nixpkgs/e7fe03cce61eebcf570cd294f70cefe3ad76feed";
+    # Hyprland (0.57.1) comes from this pinned nixpkgs-unstable revision, so it
+    # only changes when bumped on purpose: the ScrollOverview plugin built by
+    # home-config must match it exactly and may need updating for a new
+    # Hyprland. Keep this in sync with home-config/flake.nix.
+    nixpkgs-hyprland.url = "github:nixos/nixpkgs/1d060086d60cb76a40cf37109f979d88a5bd6396";
 
     xalaynix-wrappers.url = "github:alex-kumpula/xalaynix-wrappers";
     nix-jacket.url = "git+https://github.com/xalayn/nix-jacket.git?ref=main";
