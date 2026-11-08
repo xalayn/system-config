@@ -8,9 +8,10 @@
   # Joining is once per device (the laptop makes its own identity, so it
   # can't be in config):
   #   sudo tailscale up --login-server https://headscale.alex-kumpula.net --accept-routes
-  # then run the `headscale nodes register ...` command the login page shows
-  # on the server, with sudo and `--user alex`. (`up` resets settings it isn't
-  # given, hence --accept-routes there too.)
+  # The login page then shows `headscale auth register --auth-id ... --user
+  # USERNAME`: run that ON THE SERVER, not here, with sudo and `--user alex`:
+  #   ssh -t main@192.168.1.103 sudo headscale auth register --auth-id <id> --user alex
+  # (`up` resets settings it isn't given, hence --accept-routes there too.)
   services.tailscale = {
     enable = true;
     # Lets replies from the VM network through Linux's reverse-path check.
