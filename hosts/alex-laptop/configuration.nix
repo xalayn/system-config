@@ -34,6 +34,7 @@
     outputs.nixosModules.virt-manager
     outputs.nixosModules.flatpak
     outputs.nixosModules.winboat
+    outputs.nixosModules.tailscale
     outputs.nixosModules.xfce
 
     # Or modules from other flakes (such as nixos-hardware):

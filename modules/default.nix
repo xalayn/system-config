@@ -27,4 +27,5 @@
   driftwm = import ./driftwm.nix;
   hyprland = import ./hyprland.nix;
   ananicy = import ./ananicy.nix;
+  tailscale = import ./tailscale.nix;
 }
